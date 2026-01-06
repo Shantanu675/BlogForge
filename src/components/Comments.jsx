@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 export default function Comments() {
   const [comment, setComment] = useState('');
