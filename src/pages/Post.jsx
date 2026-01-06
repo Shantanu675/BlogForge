@@ -6,7 +6,7 @@ import parse from "html-react-parser";
 import { useSelector } from "react-redux";
 import Loader from "../components/Loader";
 
-export default function Post() {
+function Post() {
     const [post, setPost] = useState(null);
     const [loading, setLoading] = useState(true);
     const { slug } = useParams();
@@ -96,3 +96,5 @@ export default function Post() {
         </div>
     );
 }
+
+export default Post
