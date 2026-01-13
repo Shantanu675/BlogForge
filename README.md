@@ -1,13 +1,71 @@
-# React + Vite
+# 📝 Post – Full Stack Blogging Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MegaBlog is a modern **full-stack blogging application** built with **React**, **Redux**, **Appwrite**, and **Tailwind CSS**.  
+It allows users to create, edit, and manage blog posts with authentication, image uploads, rich text editing, and responsive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔐 **User Authentication**
+  - Sign up, login, and logout using Appwrite Authentication
+- ✍️ **Create & Edit Posts**
+  - Rich Text Editor for writing content
+  - Auto-generated SEO-friendly slugs
+- 🖼️ **Image Uploads**
+  - Featured image upload & replacement using Appwrite Storage
+- 🧑‍💻 **Author Information**
+  - Displays post author name & email
+- 📱 **Fully Responsive UI**
+  - Optimized for mobile, tablet, and desktop
+- 🧠 **State Management**
+  - Redux Toolkit for authentication state
+- 🗑️ **Post Management**
+  - Edit & delete posts (author-only access)
+- ⚡ **Fast & Modern UI**
+  - Tailwind CSS for styling
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Post
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **React**
+- **React Router**
+- **Redux Toolkit**
+- **React Hook Form**
+- **Tailwind CSS**
+- **Lucide Icons**
+
+### Backend / Services
+- **Appwrite**
+  - Authentication
+  - Database
+  - Storage
+
+
+---
+
+## 🔑 Authentication Flow
+
+1. User logs in / signs up via Appwrite
+2. User data is fetched using `account.get()`
+3. User data is stored in Redux (`authSlice`)
+4. Protected actions (create/edit/delete post) use Redux auth state
+
+---
+
+## 🧾 Post Data Includes
+
+- Title
+- Slug
+- Rich content
+- Featured image
+- Status (active / inactive)
+- Author ID
+- Author name & email
+
+---
+
+
+
