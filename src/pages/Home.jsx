@@ -3,6 +3,7 @@ import appwriteService from "../appwrite/config";
 import { Container, PostCard } from '../components'
 import { useNavigate } from "react-router-dom";
 import Loader from "../components/Loader";
+import Landing from '../components/LandingPage';
 
 function Home() {
     const [posts, setPosts] = useState([]);
@@ -21,9 +22,9 @@ function Home() {
 
     if (posts.length === 0) {
         return (
-            <div className="w-full py-8 mt-4 text-center">
+            <div className="text-center">
                 <Container>
-                    <div className="flex items-center justify-center my-10">
+                    {/* <div className="flex items-center justify-center my-10">
                         <div className="max-w-4xl w-full text-center">
                             <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800">
                                 Share Your Thoughts with the World ✍️
@@ -49,7 +50,8 @@ function Home() {
                                 </h2>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+                    <Landing/>
                 </Container>
             </div>
         )

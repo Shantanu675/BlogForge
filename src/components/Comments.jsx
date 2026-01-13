@@ -20,7 +20,7 @@ export default function Comments() {
   };
 
   return (
-    <div className="w-full mx-auto p-6 bg-gray-300">
+    <div className="w-full mx-auto p-6 bg-gray-300 rounded-3xl shadow-lg">
       <div className="flex items-center gap-3 mb-8">
         <div className="w-6 h-6 text-blue-500 font-bold text-xl">💬</div>
         <h2 className="text-2xl font-bold text-gray-800">Comments</h2>

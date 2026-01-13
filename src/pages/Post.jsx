@@ -79,14 +79,14 @@ function Post() {
 
                 {/* Meta Info */}
                 <div className="flex justify-between items-start m-10">
-                    <div className="text-red-500 font-extrabold text-center">
-                        <div className="text-3xl">♡</div>
+                    <div className="flex items-center gap-2 text-gray-500 hover:text-red-500 transition-colors duration-200 group">
+                        <div className="text-3xl">♥</div>
                         <div className="text-sm">{post.likes}</div>
                     </div>
 
                     <div className="text-blue-500 font-extrabold text-right">
                         <div>{post.generatorName}</div>
-                        <div>#{post.generatorMail}</div>
+                        <div><u>{post.generatorMail}</u></div>
                     </div>
                 </div>
 

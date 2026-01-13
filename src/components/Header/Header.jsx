@@ -24,7 +24,7 @@ function Header() {
                     
                     {/* Logo */}
                     <Link to="/" className="flex items-center">
-                        <Logo width="140px" />
+                        <Logo width="184px" />
                     </Link>
 
                     {/* Desktop Menu */}
