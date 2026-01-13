@@ -1,4 +1,4 @@
-# 📝 Post – Full Stack Blogging Platform
+# 📝 BlogForge – Full Stack Blogging Platform
 
 MegaBlog is a modern **full-stack blogging application** built with **React**, **Redux**, **Appwrite**, and **Tailwind CSS**.  
 It allows users to create, edit, and manage blog posts with authentication, image uploads, rich text editing, and responsive UI.
@@ -64,8 +64,6 @@ It allows users to create, edit, and manage blog posts with authentication, imag
 - Status (active / inactive)
 - Author ID
 - Author name & email
-
----
 
 
 
